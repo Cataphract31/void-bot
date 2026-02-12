@@ -1,0 +1,36 @@
+{
+  "name": "void-solana",
+  "version": "1.0.0",
+  "description": "VOID Protocol - Solana burn bot & setup scripts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsx src/main.ts",
+    "bot": "tsx src/bot/index.ts",
+    "bot:dry": "tsx src/bot/index.ts --dry-run",
+    "setup:pool": "pnpm --prefix meteora-invent studio dlmm-create-pool --baseMint",
+    "setup:seed": "pnpm --prefix meteora-invent studio dlmm-seed-liquidity-lfg --baseMint"
+  },
+  "dependencies": {
+    "@metaplex-foundation/mpl-token-metadata": "^3.4.0",
+    "@metaplex-foundation/umi": "^1.5.1",
+    "@metaplex-foundation/umi-bundle-defaults": "^1.5.1",
+    "@metaplex-foundation/umi-uploader-irys": "^1.5.0",
+    "@metaplex-foundation/umi-web3js-adapters": "^1.5.1",
+    "@meteora-ag/dlmm": "^1.9.3",
+    "@raydium-io/raydium-sdk-v2": "^0.2.32-alpha",
+    "@solana/spl-token": "^0.4.12",
+    "@solana/web3.js": "^1.98.0",
+    "bn.js": "^5.2.1",
+    "bs58": "^6.0.0",
+    "dotenv": "^16.4.7",
+    "node-telegram-bot-api": "^0.67.0"
+  },
+  "devDependencies": {
+    "@types/bn.js": "^5.1.6",
+    "@types/node": "^22.0.0",
+    "@types/node-telegram-bot-api": "^0.64.13",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
