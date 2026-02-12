@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "start": "tsx src/main.ts",
+    "start": "node dist/main.js",
     "bot": "tsx src/bot/index.ts",
     "bot:dry": "tsx src/bot/index.ts --dry-run",
     "setup:pool": "pnpm --prefix meteora-invent studio dlmm-create-pool --baseMint",
